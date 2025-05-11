@@ -1,0 +1,169 @@
+:root{
+    --dark-gray: #313131;
+    --black: #000000;
+    --light-gray: #d3d3d3;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+}
+
+header {
+    background: var(--dark-gray);
+    grid-column: 1 / 4;
+}
+
+h1{
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+nav {
+	max-width: 100%;
+    color: var(--white);
+}
+
+.navigation {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	background-color:var(--black);
+	align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.navigation ul{
+    display: flex;
+}
+
+.navigation li {
+	flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation a {
+	color: var(--white);
+	padding: 0.2rem;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: none;
+}
+
+
+main {
+    display: grid;
+    background: var(--white);
+    color: var(--black);
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.card{
+    border: 3px solid var(--dark-gray);
+    border-radius: 10px;
+}
+
+.card h2{
+    background-color: var(--dark-gray);
+    font-weight: normal;
+    margin: 0;
+    padding: 20px;
+    color: var(--white);
+    text-align: center;
+}
+
+.card-top,
+.card-bottom {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.card-top p, .card-bottom p {
+  flex: 3;
+  text-align: justify;
+  margin: 20px;
+  line-height: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.card-top img {
+  flex: 1;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 20%;
+  margin-top: 30px;
+  padding-right: 50px;
+}
+
+.card-bottom img {
+  flex: 1;
+  width: 300px;
+  object-fit: cover;
+  object-position: center 20%;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+
+.card-bottom img {
+  flex: 1;
+  margin-right: 10px;
+}
+.card-bottom p {
+  flex: 3;
+}
+
+.card ul {
+  padding-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+  margin-left: 50px;
+  font-size: 1.3rem;
+}
+
+.card a{
+    text-decoration: underline;
+    text-align: left;
+    color: var(--black);
+}
+
+
+footer {
+    background: var(--dark-gray);
+    color: white;
+    padding: 1rem;
+    text-align:center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column; 
+    grid-column: 1 / 4;
+}
+
+footer p{
+    margin: 0;
+}
+
+main,
+aside {
+    padding: 1rem;
+}

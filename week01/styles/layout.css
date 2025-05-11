@@ -86,6 +86,11 @@ footer {
     grid-column: 1 / 4;
 }
 
+footer #lastmodified{
+    font-size: 0.3rem;
+    color: red;
+}
+
 main,
 aside {
     padding: 1rem;
