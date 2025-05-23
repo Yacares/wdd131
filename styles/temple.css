@@ -1,0 +1,137 @@
+:root {
+    --greyish: rgb(64, 64, 64);
+    --bluish: rgb(151, 191, 231);
+    --light-grey: #eee;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    border-radius: 10px;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+main {
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+h1 {
+    padding: 1rem;
+    background-color: var(--greyish);
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--bluish);
+    color: var(--greyish);
+    padding: 0.3rem;
+    font-weight: bold;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: var(--light-grey);
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+nav {
+    background-color: var(--greyish);
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+figure {
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+    margin: 10px;
+    background-color: var(--bluish);
+    padding: 10px 10px 0 10px;
+}
+
+figcaption {
+    text-align: center;
+    background-color: var(--bluish);
+    padding: 5px;
+    font-weight: bold;
+    color: var(--greyish);
+}
+
+footer {
+    background: var(--bluish);
+    color: var(--greyish);
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+    flex-direction: column; 
+    grid-column: 1 / 4;
+}
+
+footer p {
+    margin: 0;
+}
