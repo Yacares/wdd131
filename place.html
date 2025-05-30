@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <title>WDD 131 – Place Responsive Website – Lautaro Rodriguez</title>
+    <meta name="author" content="Lautaro Rodriguez">
+    <meta name="description"
+        content="WDD 131 – Dynamic Web Fundamentals course assignment. Lautaro Rodriguez's home page featuring resposiveness and media query.">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Argentina</h1>
+        <picture class="hero">
+            <source srcset="images/argentina-large.webp" media="(min-width: 500px)">
+            <img src="images/argentina-small.webp" alt="image of Argentina's Obelisk" width="450">
+        </picture>
+        <main>
+            <section class="data">
+                <h2>Data</h2>
+                <table class="data-table">
+                    <tr>
+                        <th>Country:</th>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <th>Capital:</th>
+                        <td>Buenos Aires</td>
+                    </tr>
+                    <tr>
+                        <th>Official Language:</th>
+                        <td>Spanish</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Peso</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>10,000,000</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="weather icon">
+                <table id="weather-table" class="data-table">
+                    <tr>
+                        <th>Temperature:</th>
+                        <td>9°C</td>
+                    </tr>
+                    <tr>
+                        <th>Humidity:</th>
+                        <td>73%</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Speed:</th>
+                        <td>16 km/h</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p> <span id="currentyear"></span> </p>
+            <p id="lastmodified"></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
