@@ -1,0 +1,26 @@
+@media (min-width: 1024px) {
+
+#menu {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation li {
+    display: block;
+}
+
+.card-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+
+}
