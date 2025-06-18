@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Center Pizza</title>
+    <meta name="author" content="Lautaro Rodriguez">
+    <meta name="description" content="Photo gallery of our delicious pizzas and shop atmosphere." />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/wdd131/project/styles/center-pizza.css" />
+    <script src="scripts/center-pizza.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+
+                <li class="logo-item">
+                    <img src="images/logo center.jpg" alt="Center Pizza Logo" class="logo" />
+                </li>
+
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="photo-gallery">Photo Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery1.jpg" alt="gallery picture" loading="lazy" />
+                <img src="images/gallery2.jpg" alt="gallery picture" loading="lazy" />
+                <img src="images/gallery3.jpg" alt="gallery picture" loading="lazy" />
+                <img src="images/gallery4.jpg" alt="gallery picture" loading="lazy" />
+                <img src="images/gallery5.jpg" alt="gallery picture" loading="lazy" />
+                <img src="images/gallery6.jpg" alt="gallery picture" loading="lazy" />
+                <img src="images/gallery7.jpg" alt="gallery picture" loading="lazy" />
+                <img src="images/gallery8.jpg" alt="gallery picture" loading="lazy" />
+            </div>
+        </section>
+    </main>
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Large preview">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Center Pizza</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/people/Center-Pizza/100048631123054/" target="_blank"
+                aria-label="Facebook">
+                <img src="images/facebooklogo.svg" alt="Facebook icon">
+            </a>
+            <a href="https://www.instagram.com/centerpizza1992" target="_blank" aria-label="Instagram">
+                <img src="images/instagramlogo.svg" alt="Instagram icon">
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5492252518621&text&type=phone_number&app_absent=0"
+                target="_blank" aria-label="WhatsApp">
+                <img src="images/whatsapplogo.svg" alt="WhatsApp icon">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
