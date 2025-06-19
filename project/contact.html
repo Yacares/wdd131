@@ -16,23 +16,26 @@
 <body>
     <header>
         <nav class="nav-bar">
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+            <div class="nav-container">
+                <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
 
-                <li class="logo-item">
-                    <img src="images/logo center.jpg" alt="Center Pizza Logo" class="logo" />
-                </li>
+                    <li class="logo-item">
+                        <img src="images/logo center.jpg" alt="Center Pizza Logo" class="logo" />
+                    </li>
 
-                <li><a href="about-us.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
-        <section>
-            <h2>Contact Us</h2>
+        <section class="content">
+            <h2 class="contact-us">Contact Us</h2>
             <p>📍 Calle 63 N° 112, San Clemente del Tuyú</p>
             <p>📞 +54 9 2252 51-8621</p>
             <p>🕒 Mon–Sun: 10 AM–3 PM & 6PM-12AM</p>
@@ -40,18 +43,22 @@
 
         <section>
             <h3>Send Us a Message</h3>
-            <form id="contactForm">
-                <label for="name">Name</label>
-                <input type="text" id="name" required />
+            <div class="contact-container">
+                <form id="contactForm">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required />
 
-                <label for="email">Email</label>
-                <input type="email" id="email" required />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required />
 
-                <label for="message">Message</label>
-                <textarea id="message" rows="4" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
 
-                <button type="submit">Send</button>
-            </form>
+                    <button type="submit">Send</button>
+                </form>
+
+                <img src="images/logo center.jpg" alt="logo center pizza" class="contact-image" />
+            </div>
         </section>
     </main>
 
