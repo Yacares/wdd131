@@ -494,6 +494,8 @@ footer .social-links a:hover {
 
     .modal-content {
         margin-top: 50%;
+        width: 380px;
+        height: auto;
     }
 
     .close {
