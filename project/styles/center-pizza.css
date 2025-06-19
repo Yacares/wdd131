@@ -19,6 +19,10 @@ body {
     flex-direction: column;
 }
 
+body.modal-open .hamburger {
+  display: none !important;
+}
+
 main {
     padding: 1rem 2rem 4rem;
     flex: 1;
@@ -173,6 +177,7 @@ section {
     margin: 5% auto;
     border-radius: 10px;
     border: 3px solid #e53935;
+    max-height: 750px;
 }
 
 .close {
@@ -390,7 +395,7 @@ footer .social-links a:hover {
         display: none;
     }
 
-    .contact-us{
+    .contact-us {
         margin-top: 5rem;
     }
 
@@ -399,7 +404,7 @@ footer .social-links a:hover {
         grid-template-columns: 1fr 1fr;
     }
 
-    .photo-gallery{
+    .photo-gallery {
         margin-top: 5rem;
     }
 
@@ -444,8 +449,21 @@ footer .social-links a:hover {
         z-index: 1200;
     }
 
+    .nav-menu.show~.hamburger,
+    .nav-container .hamburger.open {
+        color: white;
+    }
+
     .logo-item {
         order: -1;
         margin-bottom: 1rem;
+    }
+
+    .modal-content {
+        margin-top: 50%;
+    }
+
+    .close{
+        margin-top: 30%;
     }
 }
